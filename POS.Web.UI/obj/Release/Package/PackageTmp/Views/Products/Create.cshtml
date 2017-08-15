@@ -1,0 +1,62 @@
+﻿@model POS.Web.UI.ViewModels.ProductFormViewModel
+@{
+    ViewBag.Title = "New";
+}
+
+@Html.ActionLink("Back", "Index", null, new { @class = "btn btn-default" })
+
+<h2>New Product</h2>
+
+@if (!String.IsNullOrWhiteSpace(ViewBag.ErrorMsg)) 
+{
+    <p class="text-danger">ViewBag.ErrorMsg</p>
+}
+
+@using (Html.BeginForm("Create", "Products")) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-group">
+        @Html.LabelFor(m => m.Product.Name)
+        @Html.TextBoxFor(m => m.Product.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Product.Name, "", new { @class = "field-validation-error" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Product.Price)
+        @Html.TextBoxFor(m => m.Product.Price, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Product.Price, "", new { @class = "field-validation-error" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Product.Code)
+        @Html.TextBoxFor(m => m.Product.Code, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Product.Code, "", new { @class = "field-validation-error" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Product.Description)
+        @Html.TextBoxFor(m => m.Product.Description, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @*@Html.LabelFor(m => m.ReleaseDate)*@
+        <label for="ReleaseDate">Release Date</label>
+        @Html.TextBoxFor(m => m.Product.ReleaseDate, "{0:d MMM yyyy}", new { @class = "form-control", type = "date" })
+        @Html.ValidationMessageFor(m => m.Product.ReleaseDate, "", new { @class = "field-validation-error" })
+    </div>
+    <div class="form-group">
+        @*@Html.LabelFor(m => m.ImageUrl)*@
+        <label for="ImageUrl">Image</label>
+        @Html.TextBoxFor(m => m.Product.ImageUrl, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Product.ImageUrl, "", new { @class = "field-validation-error" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Product.CategoryId)
+        @Html.DropDownListFor(m => m.Product.CategoryId, new SelectList(Model.Categories, "Id", "Name"), "Select Category", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Product.CategoryId, "", new { @class = "field-validation-error" })
+    </div>
+    
+    <button type="submit" class="btn btn-success">Submit</button>
+}
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}

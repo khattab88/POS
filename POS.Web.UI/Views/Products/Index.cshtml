@@ -1,0 +1,88 @@
+﻿@model IEnumerable<POS.Web.UI.ViewModels.ProductViewModel>
+@{
+    ViewBag.Title = "Product List";
+}
+
+@*
+    this is a comment
+*@
+
+<div class="row"></div>
+<div class="row">
+    <div class="col-md-10">
+        <h3>Product List</h3>
+    </div>
+    <div class="col-md-2">
+        @Html.ActionLink("New Product", "Create", "Products", null, new { @class = "btn btn-success"})
+    </div>
+</div>
+
+
+
+@if (Model.Count() == 0)
+{
+    <p>No Products</p>
+}
+else
+{
+    <table id="products" class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Code</th>
+            <th>Price</th>
+            <th>Released</th>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+            <td>@Html.ActionLink(p.Name, "Details", "Products", new { id = p.Id }, null)</td>
+            <td>@p.Code</td>
+            <td>@p.Price</td>
+            <td>@p.ReleaseDate.ToString("MMM-yyyy")</td>
+            <td>@Html.ActionLink("Modify", "Edit", "Products", new { id = p.Id }, new { @class = "btn btn-primary" })</td>
+            <td><button class="btn btn-danger js-delete" data-product-id="@p.Id">Delete</button></td>
+        </tr>
+        }
+    </tbody>
+</table>   
+}
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            var apiUrl = "http://localhost:56992/api/products/";
+
+            //$("#products").DataTable();
+
+            $("#products .js-delete").on("click", function () {
+
+                var button = $(this);
+                var productId = button.attr("data-product-id");
+
+                bootbox.confirm("Are you sure ?", function (result) {
+                    if (result) {
+                        $.ajax({
+                            url: apiUrl + productId,
+                            method: "DELETE",
+                            success: function () {
+                                console.log("product with id " + productId + " has been deleted !");
+                                button.parents("tr").remove();
+                            }
+                        });
+                    }
+                });
+
+            });
+
+        });
+    </script>
+}
+
+
+        
+    

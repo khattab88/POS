@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="6675ad30-75c8-4a0d-b1ba-8ad85d40508f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <comments>
+    <comment Id="d1b5c4bd-59fc-4aaf-8235-947376fd2b50" name="Comment1">
+      <body>Server (MVC)
+Client SPA (Angular)
+</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="1471d826-e591-4b11-9c09-e0ad97df2845" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="f9f834be-e40c-46ed-a8bd-395667628bfd" name="Comment2">
+      <body>System Use Cases
+</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="5b7c75a5-5dd1-480b-a7f4-ebc14f098050" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="9045cb1f-a8e2-41e1-8324-c3055038186a" name="Comment3">
+      <body>Business Logic</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="dd9f1d6c-8ea2-4005-9878-820733dd2d52" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="8c4a408b-1a84-4463-9cca-b15796de2cfb" name="Comment4">
+      <body>Cross-Cutting Concerns
+ (Ex: Looging, Authentication, Error Handlig, ...
+</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="e3af9336-3e23-41c7-b583-94892a64a978" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+  </comments>
+  <layers>
+    <layer Id="c2a6f180-a69f-4c80-a826-aaa92e03e93e" name="Data&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="7fdc553b-77d2-45cf-944f-1af4c2722c07" direction="Forward">
+          <layerMoniker Id="2ff24964-c2c8-41f6-84d1-41b8635d83fe" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="2ff24964-c2c8-41f6-84d1-41b8635d83fe" name="Domain.Model&#xD;&#xA;" />
+    <layer Id="dd9f1d6c-8ea2-4005-9878-820733dd2d52" name="Domain.Services&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="d81d6d5f-be1e-43d2-9db3-9660bbc9ae26" direction="Forward">
+          <layerMoniker Id="c2a6f180-a69f-4c80-a826-aaa92e03e93e" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="6cf33b3e-fda4-430a-9877-f467c4bb174b" direction="Forward">
+          <layerMoniker Id="e3af9336-3e23-41c7-b583-94892a64a978" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="5b7c75a5-5dd1-480b-a7f4-ebc14f098050" name="Application&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="433633c8-f8da-4060-8c5a-8a7731a9ede5" direction="Forward">
+          <layerMoniker Id="dd9f1d6c-8ea2-4005-9878-820733dd2d52" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="82a961f8-a380-411b-8df6-e1db03ab4d3c" direction="Forward">
+          <layerMoniker Id="e3af9336-3e23-41c7-b583-94892a64a978" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="c4f7af17-b898-4231-a469-19e08dff3f5b" name="Web&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="964d3018-df6f-46ca-b57f-e2fa04fdc279" direction="Forward">
+          <layerMoniker Id="5b7c75a5-5dd1-480b-a7f4-ebc14f098050" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="03661691-afcc-4c0c-a65a-65db41859877" direction="Forward">
+          <layerMoniker Id="e3af9336-3e23-41c7-b583-94892a64a978" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="1471d826-e591-4b11-9c09-e0ad97df2845" name="UI">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="9935065c-1ccf-48d6-b65b-5cc09108d839" direction="Forward">
+              <layerMoniker Id="670e5afb-9429-4163-bc22-29d138171896" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="670e5afb-9429-4163-bc22-29d138171896" name="API" />
+      </childLayers>
+    </layer>
+    <layer Id="e3af9336-3e23-41c7-b583-94892a64a978" name="Infrastructure&#xD;&#xA;" />
+  </layers>
+</layerModel>

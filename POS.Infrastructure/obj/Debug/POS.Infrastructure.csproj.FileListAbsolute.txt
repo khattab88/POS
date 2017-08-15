@@ -1,0 +1,7 @@
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Infrastructure\bin\Debug\POS.Infrastructure.dll
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Infrastructure\bin\Debug\POS.Infrastructure.pdb
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Infrastructure\bin\Debug\log4net.dll
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Infrastructure\bin\Debug\log4net.xml
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Infrastructure\obj\Debug\POS.Infrastructure.csprojResolveAssemblyReference.cache
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Infrastructure\obj\Debug\POS.Infrastructure.dll
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Infrastructure\obj\Debug\POS.Infrastructure.pdb

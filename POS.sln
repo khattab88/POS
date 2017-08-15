@@ -1,0 +1,162 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS.Domain.Model", "POS.Domain.Model\POS.Domain.Model.csproj", "{6BC3EC0D-FA52-484D-BCE8-B37F34C7868D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS.Data", "POS.Data\POS.Data.csproj", "{4FAA75F4-CE95-48C3-9458-BB2D85C67DCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS.Domain.Services", "POS.Domain.Services\POS.Domain.Services.csproj", "{66763584-5C42-4D1C-80B1-310339A6FB53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS.Application", "POS.Application\POS.Application.csproj", "{EF53D1A4-1650-40D5-8EAD-03E8EEDCDADB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS.Web.UI", "POS.Web.UI\POS.Web.UI.csproj", "{BC0E35CD-1F58-409F-B432-0EECE69C1C90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS.Web.API", "POS.Web.API\POS.Web.API.csproj", "{94BBF9D6-9DE6-426C-A90C-85686D69A64C}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "POS.Design", "POS.Design\POS.Design.modelproj", "{2ADF5C7B-EEF6-445F-9D9C-A3337A3F45D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{39BDFE24-74EC-4F66-ADCD-A47B8F6D235D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS.Domain.Services.Tests", "POS.Domain.Services.Tests\POS.Domain.Services.Tests.csproj", "{6F97D046-420E-41CB-8453-929C0EB92506}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS.Application.Tests", "POS.Application.Tests\POS.Application.Tests.csproj", "{1B60D231-0CA4-4581-B328-381E87FCDBE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS.Client", "POS.Client\POS.Client.csproj", "{DCB15FAE-C9A9-4E2C-867D-330309EF2A67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{CFDF1F5B-713A-43F6-92EC-C6E9BFF69449}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{2C8D3891-DE98-4692-A7A3-3A5F79C5F826}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS.Infrastructure", "POS.Infrastructure\POS.Infrastructure.csproj", "{888945B8-555B-496F-A185-AC17666E69F3}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://khattab88.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = POS.Application.Tests\\POS.Application.Tests.csproj
+		SccProjectTopLevelParentUniqueName1 = POS.sln
+		SccProjectName1 = POS.Application.Tests
+		SccLocalPath1 = POS.Application.Tests
+		SccProjectUniqueName2 = POS.Application\\POS.Application.csproj
+		SccProjectName2 = POS.Application
+		SccLocalPath2 = POS.Application
+		SccProjectUniqueName3 = POS.Client\\POS.Client.csproj
+		SccProjectName3 = POS.Client
+		SccLocalPath3 = POS.Client
+		SccProjectUniqueName4 = POS.Data\\POS.Data.csproj
+		SccProjectName4 = POS.Data
+		SccLocalPath4 = POS.Data
+		SccProjectUniqueName5 = POS.Design\\POS.Design.modelproj
+		SccProjectName5 = POS.Design
+		SccLocalPath5 = POS.Design
+		SccProjectUniqueName6 = POS.Domain.Model\\POS.Domain.Model.csproj
+		SccProjectTopLevelParentUniqueName6 = POS.sln
+		SccProjectName6 = POS.Domain.Model
+		SccLocalPath6 = POS.Domain.Model
+		SccProjectUniqueName7 = POS.Domain.Services.Tests\\POS.Domain.Services.Tests.csproj
+		SccProjectTopLevelParentUniqueName7 = POS.sln
+		SccProjectName7 = POS.Domain.Services.Tests
+		SccLocalPath7 = POS.Domain.Services.Tests
+		SccProjectUniqueName8 = POS.Domain.Services\\POS.Domain.Services.csproj
+		SccProjectTopLevelParentUniqueName8 = POS.sln
+		SccProjectName8 = POS.Domain.Services
+		SccLocalPath8 = POS.Domain.Services
+		SccProjectUniqueName9 = POS.Infrastructure\\POS.Infrastructure.csproj
+		SccProjectName9 = POS.Infrastructure
+		SccLocalPath9 = POS.Infrastructure
+		SccProjectUniqueName10 = POS.Web.API\\POS.Web.API.csproj
+		SccProjectTopLevelParentUniqueName10 = POS.sln
+		SccProjectName10 = POS.Web.API
+		SccLocalPath10 = POS.Web.API
+		SccProjectUniqueName11 = POS.Web.UI\\POS.Web.UI.csproj
+		SccProjectTopLevelParentUniqueName11 = POS.sln
+		SccProjectName11 = POS.Web.UI
+		SccLocalPath11 = POS.Web.UI
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Testing|Any CPU = Testing|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BC3EC0D-FA52-484D-BCE8-B37F34C7868D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BC3EC0D-FA52-484D-BCE8-B37F34C7868D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BC3EC0D-FA52-484D-BCE8-B37F34C7868D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BC3EC0D-FA52-484D-BCE8-B37F34C7868D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BC3EC0D-FA52-484D-BCE8-B37F34C7868D}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{6BC3EC0D-FA52-484D-BCE8-B37F34C7868D}.Testing|Any CPU.Build.0 = Testing|Any CPU
+		{4FAA75F4-CE95-48C3-9458-BB2D85C67DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FAA75F4-CE95-48C3-9458-BB2D85C67DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FAA75F4-CE95-48C3-9458-BB2D85C67DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FAA75F4-CE95-48C3-9458-BB2D85C67DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FAA75F4-CE95-48C3-9458-BB2D85C67DCB}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{4FAA75F4-CE95-48C3-9458-BB2D85C67DCB}.Testing|Any CPU.Build.0 = Testing|Any CPU
+		{66763584-5C42-4D1C-80B1-310339A6FB53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66763584-5C42-4D1C-80B1-310339A6FB53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66763584-5C42-4D1C-80B1-310339A6FB53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66763584-5C42-4D1C-80B1-310339A6FB53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66763584-5C42-4D1C-80B1-310339A6FB53}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{66763584-5C42-4D1C-80B1-310339A6FB53}.Testing|Any CPU.Build.0 = Testing|Any CPU
+		{EF53D1A4-1650-40D5-8EAD-03E8EEDCDADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF53D1A4-1650-40D5-8EAD-03E8EEDCDADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF53D1A4-1650-40D5-8EAD-03E8EEDCDADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF53D1A4-1650-40D5-8EAD-03E8EEDCDADB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF53D1A4-1650-40D5-8EAD-03E8EEDCDADB}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{EF53D1A4-1650-40D5-8EAD-03E8EEDCDADB}.Testing|Any CPU.Build.0 = Testing|Any CPU
+		{BC0E35CD-1F58-409F-B432-0EECE69C1C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC0E35CD-1F58-409F-B432-0EECE69C1C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC0E35CD-1F58-409F-B432-0EECE69C1C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC0E35CD-1F58-409F-B432-0EECE69C1C90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC0E35CD-1F58-409F-B432-0EECE69C1C90}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{BC0E35CD-1F58-409F-B432-0EECE69C1C90}.Testing|Any CPU.Build.0 = Testing|Any CPU
+		{94BBF9D6-9DE6-426C-A90C-85686D69A64C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94BBF9D6-9DE6-426C-A90C-85686D69A64C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94BBF9D6-9DE6-426C-A90C-85686D69A64C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94BBF9D6-9DE6-426C-A90C-85686D69A64C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94BBF9D6-9DE6-426C-A90C-85686D69A64C}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{94BBF9D6-9DE6-426C-A90C-85686D69A64C}.Testing|Any CPU.Build.0 = Testing|Any CPU
+		{2ADF5C7B-EEF6-445F-9D9C-A3337A3F45D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ADF5C7B-EEF6-445F-9D9C-A3337A3F45D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ADF5C7B-EEF6-445F-9D9C-A3337A3F45D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ADF5C7B-EEF6-445F-9D9C-A3337A3F45D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ADF5C7B-EEF6-445F-9D9C-A3337A3F45D1}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{2ADF5C7B-EEF6-445F-9D9C-A3337A3F45D1}.Testing|Any CPU.Build.0 = Testing|Any CPU
+		{6F97D046-420E-41CB-8453-929C0EB92506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F97D046-420E-41CB-8453-929C0EB92506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F97D046-420E-41CB-8453-929C0EB92506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F97D046-420E-41CB-8453-929C0EB92506}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F97D046-420E-41CB-8453-929C0EB92506}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{6F97D046-420E-41CB-8453-929C0EB92506}.Testing|Any CPU.Build.0 = Testing|Any CPU
+		{1B60D231-0CA4-4581-B328-381E87FCDBE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B60D231-0CA4-4581-B328-381E87FCDBE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B60D231-0CA4-4581-B328-381E87FCDBE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B60D231-0CA4-4581-B328-381E87FCDBE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B60D231-0CA4-4581-B328-381E87FCDBE4}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{1B60D231-0CA4-4581-B328-381E87FCDBE4}.Testing|Any CPU.Build.0 = Testing|Any CPU
+		{DCB15FAE-C9A9-4E2C-867D-330309EF2A67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB15FAE-C9A9-4E2C-867D-330309EF2A67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB15FAE-C9A9-4E2C-867D-330309EF2A67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB15FAE-C9A9-4E2C-867D-330309EF2A67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCB15FAE-C9A9-4E2C-867D-330309EF2A67}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{DCB15FAE-C9A9-4E2C-867D-330309EF2A67}.Testing|Any CPU.Build.0 = Testing|Any CPU
+		{888945B8-555B-496F-A185-AC17666E69F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{888945B8-555B-496F-A185-AC17666E69F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{888945B8-555B-496F-A185-AC17666E69F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{888945B8-555B-496F-A185-AC17666E69F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{888945B8-555B-496F-A185-AC17666E69F3}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{888945B8-555B-496F-A185-AC17666E69F3}.Testing|Any CPU.Build.0 = Testing|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{66763584-5C42-4D1C-80B1-310339A6FB53} = {CFDF1F5B-713A-43F6-92EC-C6E9BFF69449}
+		{6BC3EC0D-FA52-484D-BCE8-B37F34C7868D} = {CFDF1F5B-713A-43F6-92EC-C6E9BFF69449}
+		{94BBF9D6-9DE6-426C-A90C-85686D69A64C} = {2C8D3891-DE98-4692-A7A3-3A5F79C5F826}
+		{BC0E35CD-1F58-409F-B432-0EECE69C1C90} = {2C8D3891-DE98-4692-A7A3-3A5F79C5F826}
+		{6F97D046-420E-41CB-8453-929C0EB92506} = {39BDFE24-74EC-4F66-ADCD-A47B8F6D235D}
+		{1B60D231-0CA4-4581-B328-381E87FCDBE4} = {39BDFE24-74EC-4F66-ADCD-A47B8F6D235D}
+	EndGlobalSection
+EndGlobal

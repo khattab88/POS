@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="f3ca0288-819d-4d63-a70f-76485a596209" name="POS.UseCases" linkedPackageId="43c2e4dd-d4f9-47a2-a7a1-6e586c375000" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="980014ed-24d1-4d9e-9197-616b2f509505">
+      <profileInstance Id="a0912347-bfd5-4232-937c-f4628cd3d72f" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="dce94225-b1ff-4469-877f-c77c730097fb">
+      <profileInstance Id="def58063-9559-4123-8e64-0497e0768687" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="8bdb6c9d-d559-4cec-beb6-5cfc6ed50649" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0f6fd36d-adc8-4a5e-a2da-73071efcd04e" />
+        <targetEnds>
+          <association Id="fb1e6a3f-b67f-4d8d-a5b1-3486b4cbe669" isDerived="false" sourceEndRoleName="User" targetEndRoleName="View Product List" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="078117a1-4e70-4d69-ac15-3e6e71a5b051" LastKnownName="View Product List" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc166199-019b-4173-8df5-3c54dd4ad1d8" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ddac091f-794d-424d-859d-aaef8266557e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8fb77ca8-702b-455e-b4de-03db071f6d21" name="View Product List" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="435efb7a-2a68-4c81-b05a-10af157ba0f5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8d4f3b4a-c4e0-4819-8b7f-e83281d234ee" />
+          </association>
+          <association Id="8ba303e7-6e8e-4964-83e6-5e97a0388126" isDerived="false" sourceEndRoleName="User" targetEndRoleName="View Product Details" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d581a46c-f60a-4787-94b5-d7affc0e38fb" LastKnownName="View Product Details" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ec6132ab-fa69-460e-b814-e524819c2082" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e123a0c2-1445-4a10-83bc-ab10d3addad6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ce73179a-ea0d-4417-bf7f-3a642701a31f" name="View Product Details" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8a57e36a-db65-48e2-90bb-1caa455f2d5d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c1414c40-d651-4722-b31c-dcaaf06a3443" />
+          </association>
+          <association Id="79454d95-2b7a-4ba6-bdfc-6f339f2f2f35" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="500c62f0-4c68-4d79-9770-e28c665d71bf" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c7e9ccbe-4529-43e9-9e58-18797716e29d" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c4bef7de-4d53-49af-aaa7-d1ab370c8325" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9bf18b64-1075-4fb1-8fd8-4cac014bc0f3" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="584117a1-8d0e-4f12-a082-a3a17c730e1a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="412df27e-af24-4d0e-bde7-a014ee5c036f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="08e80f41-7770-48a9-bc66-68a976fd7831" name="POS" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="db03adbe-4d99-493c-b790-d9700129e389" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="500c62f0-4c68-4d79-9770-e28c665d71bf" name="Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d1d6f9df-404f-4040-a522-373189479352" />
+        <subjects>
+          <subsystemMoniker Id="08e80f41-7770-48a9-bc66-68a976fd7831" LastKnownName="POS" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="078117a1-4e70-4d69-ac15-3e6e71a5b051" name="View Product List" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fdca7861-ddad-4823-8090-1169da006d65" />
+        <subjects>
+          <subsystemMoniker Id="08e80f41-7770-48a9-bc66-68a976fd7831" LastKnownName="POS" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="d581a46c-f60a-4787-94b5-d7affc0e38fb" name="View Product Details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="88dc36da-67dc-4950-bb5e-6b0887545ae7" />
+        <subjects>
+          <subsystemMoniker Id="08e80f41-7770-48a9-bc66-68a976fd7831" LastKnownName="POS" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b91ea16a-0118-4780-9294-6de649276e94" name="Make an Order" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="96326892-93b7-4cef-90d0-b6df405346b1" />
+        <additions>
+          <include Id="d112ae94-1156-4eac-a56c-b93fc221ad29">
+            <useCaseMoniker Id="500c62f0-4c68-4d79-9770-e28c665d71bf" LastKnownName="Login" />
+            <elementDefinition Id="8bc48a2b-28b7-498d-b4c5-5c99d3b885db" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="08e80f41-7770-48a9-bc66-68a976fd7831" LastKnownName="POS" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="43c2e4dd-d4f9-47a2-a7a1-6e586c375000" name="POS.Design">
+    <elementDefinition Id="b96dbac0-c57f-4511-9955-ff4909db7efa" />
+  </package>
+</useCaseModelRoot>

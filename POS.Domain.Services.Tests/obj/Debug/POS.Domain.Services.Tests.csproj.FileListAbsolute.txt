@@ -1,0 +1,11 @@
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Domain.Services.Tests\bin\Debug\POS.Domain.Services.Tests.dll
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Domain.Services.Tests\bin\Debug\POS.Domain.Services.Tests.pdb
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Domain.Services.Tests\bin\Debug\Castle.Core.dll
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Domain.Services.Tests\bin\Debug\Moq.dll
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Domain.Services.Tests\bin\Debug\nunit.framework.dll
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Domain.Services.Tests\bin\Debug\Castle.Core.xml
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Domain.Services.Tests\bin\Debug\Moq.xml
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Domain.Services.Tests\bin\Debug\nunit.framework.xml
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Domain.Services.Tests\obj\Debug\POS.Domain.Services.Tests.dll
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Domain.Services.Tests\obj\Debug\POS.Domain.Services.Tests.pdb
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Domain.Services.Tests\obj\Debug\POS.Domain.Services.Tests.csprojResolveAssemblyReference.cache

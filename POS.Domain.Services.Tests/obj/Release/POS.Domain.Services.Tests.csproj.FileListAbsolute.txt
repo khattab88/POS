@@ -1,0 +1,5 @@
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Domain.Services.Tests\bin\Release\POS.Domain.Services.Tests.dll
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Domain.Services.Tests\bin\Release\POS.Domain.Services.Tests.pdb
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Domain.Services.Tests\obj\Release\POS.Domain.Services.Tests.csprojResolveAssemblyReference.cache
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Domain.Services.Tests\obj\Release\POS.Domain.Services.Tests.dll
+F:\Khattab\Marshal Project\Projects\POS\POS\POS.Domain.Services.Tests\obj\Release\POS.Domain.Services.Tests.pdb
